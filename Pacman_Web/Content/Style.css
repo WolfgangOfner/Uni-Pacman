@@ -1,0 +1,42 @@
+﻿body { 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.connectioninput {
+    max-width: 150px;
+}
+
+td {
+    height: 55px;
+}
+
+.footer {
+    font-size: 12px;
+}
+
+#headline {
+    color: yellow;
+}
+
+.directioncontrol { 
+
+    border-radius: 10px;
+}
+
+.controlbutton {
+background: gray;
+border:1px solid yellow;
+border-radius: 20px;
+vertical-align:middle;
+color:white;
+font-size:20px;
+height: 50px;
+min-width: 70px;
+max-width: 70px;
+box-shadow: 0 0 2px rgb(128, 128, 128);
+}
+
+    .controlbutton:hover {
+        box-shadow: 0 0 10px rgb(255,255,0);
+    }

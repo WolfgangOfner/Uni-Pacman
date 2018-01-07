@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkPacman", "NetworkPacman\NetworkPacman.csproj", "{4133D98E-A6ED-4D4A-B3F3-69AC0EBBAAE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacmanClient", "PacmanClient\PacmanClient.csproj", "{D34169E1-5EB1-4764-893C-D67BA0BD26C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacManLib", "PacManLib\PacManLib.csproj", "{2DD9C0AE-BA2C-41E0-B568-31972AD66ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacman_Web", "Pacman_Web\Pacman_Web.csproj", "{C8A0D84D-6E10-463B-B17A-4D9FC7D634BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacManUnitTest", "PacManUnitTest\PacManUnitTest.csproj", "{218885CE-0D7C-4DAB-9ABA-FBB48711CA8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacmanClientWPF", "PacmanClientWPF\PacmanClientWPF.csproj", "{2A2F9A86-562C-47DE-9F53-DCD5C00F42DF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.10.100.41/ss2014%20-%20projektwochen%20-%20team%204
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PacmanClient\\PacmanClient.csproj
+		SccProjectName1 = PacmanClient
+		SccLocalPath1 = PacmanClient
+		SccProjectUniqueName2 = PacManLib\\PacManLib.csproj
+		SccProjectName2 = PacManLib
+		SccLocalPath2 = PacManLib
+		SccProjectUniqueName3 = NetworkPacman\\NetworkPacman.csproj
+		SccProjectName3 = NetworkPacman
+		SccLocalPath3 = NetworkPacman
+		SccProjectUniqueName4 = Pacman_Web\\Pacman_Web.csproj
+		SccProjectName4 = Pacman_Web
+		SccLocalPath4 = Pacman_Web
+		SccProjectUniqueName5 = PacManUnitTest\\PacManUnitTest.csproj
+		SccProjectName5 = PacManUnitTest
+		SccLocalPath5 = PacManUnitTest
+		SccProjectUniqueName6 = PacmanClientWPF\\PacmanClientWPF.csproj
+		SccProjectName6 = PacmanClientWPF
+		SccLocalPath6 = PacmanClientWPF
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4133D98E-A6ED-4D4A-B3F3-69AC0EBBAAE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4133D98E-A6ED-4D4A-B3F3-69AC0EBBAAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4133D98E-A6ED-4D4A-B3F3-69AC0EBBAAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4133D98E-A6ED-4D4A-B3F3-69AC0EBBAAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34169E1-5EB1-4764-893C-D67BA0BD26C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34169E1-5EB1-4764-893C-D67BA0BD26C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34169E1-5EB1-4764-893C-D67BA0BD26C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34169E1-5EB1-4764-893C-D67BA0BD26C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD9C0AE-BA2C-41E0-B568-31972AD66ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD9C0AE-BA2C-41E0-B568-31972AD66ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD9C0AE-BA2C-41E0-B568-31972AD66ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD9C0AE-BA2C-41E0-B568-31972AD66ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A0D84D-6E10-463B-B17A-4D9FC7D634BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A0D84D-6E10-463B-B17A-4D9FC7D634BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A0D84D-6E10-463B-B17A-4D9FC7D634BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A0D84D-6E10-463B-B17A-4D9FC7D634BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218885CE-0D7C-4DAB-9ABA-FBB48711CA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218885CE-0D7C-4DAB-9ABA-FBB48711CA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218885CE-0D7C-4DAB-9ABA-FBB48711CA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218885CE-0D7C-4DAB-9ABA-FBB48711CA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2F9A86-562C-47DE-9F53-DCD5C00F42DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2F9A86-562C-47DE-9F53-DCD5C00F42DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2F9A86-562C-47DE-9F53-DCD5C00F42DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2F9A86-562C-47DE-9F53-DCD5C00F42DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

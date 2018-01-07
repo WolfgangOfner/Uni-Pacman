@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("CheckConnection", "Connection", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <div class="form-horizontal; connectform">
+        <h4>Connect to Server</h4>
+        <hr />
+
+        <div class="form-group">
+            <label>IP Adress:</label>
+            <div>
+                <input name="ip" type="text" size="30" maxlength="30" value="10.10.2.209">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Port:</label>
+            <div>
+                <input name="port" type="text" size="30" maxlength="10" value="13000">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Connect" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}

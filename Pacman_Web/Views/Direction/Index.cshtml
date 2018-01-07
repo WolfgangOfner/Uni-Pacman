@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Control";
+}
+
+<script type="text/javascript">
+    window.onload = function () {
+        var img = document.getElementById("pacimage");
+
+        $('#btn_up').click(function () {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SendPosition", "Direction", new { direction = "up" })',
+                success: function () {
+                    img.src = "/Images/pac_up.png";
+                }
+            });
+        });
+
+        $('#btn_down').click(function () {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SendPosition", "Direction", new { direction = "down" })',
+                success: function () {
+                    img.src = "/Images/pac_down.png";
+                }
+            });
+        });
+
+        $('#btn_left').click(function () {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SendPosition", "Direction", new { direction = "left" })',
+                success: function () {
+                    img.src = "/Images/pac_left.png";
+                }
+            });
+        });
+
+        $('#btn_right').click(function () {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SendPosition", "Direction", new { direction = "right" })',
+                success: function () {
+                    img.src = "/Images/Pacman.png";
+                }
+            });
+        });
+
+        // Disconnect from server
+        $('#btn_disconnect').click(function () {
+            document.location = '@Url.Action("Disconnect", "Connection")';
+        });
+
+        // Control Pacman with the arrow keys.
+        $(document).keydown(function (e) {
+            if (e.keyCode == 37) {
+                $("#btn_left").click();
+            }
+            else if (e.keyCode == 38) {
+                $("#btn_up").click();
+            }
+            else if (e.keyCode == 39) {
+                $("#btn_right").click();
+            }
+            else if (e.keyCode == 40) {
+                $("#btn_down").click();
+            }
+        });
+    }
+</script>
+
+<div class="control">
+    <table class="directioncontrol">
+        <tr>
+            <td></td>
+            <td><button id="btn_up" type="button" class="controlbutton" onclick="senddirection"><span class="glyphicon glyphicon-arrow-up"></span></button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><button id="btn_left" type="button" class="controlbutton" onclick="senddirection"><span class="glyphicon glyphicon-arrow-left"></span></button></td>
+            <td><img id="pacimage" src="~/Images/Pacman.png" height="50" width="50" /></td>
+            <td><button id="btn_right" type="button" class="controlbutton" onclick="senddirection"><span class="glyphicon glyphicon-arrow-right"></span></button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="btn_down" type="button" class="controlbutton" onclick="senddirection"><span class="glyphicon glyphicon-arrow-down"></span></button></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<br />
+<div align="center">
+    <button id="btn_disconnect" class="btn btn-danger" onclick="disconnect">Disconnect</button>
+
+</div>
